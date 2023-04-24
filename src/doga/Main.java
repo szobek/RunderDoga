@@ -63,7 +63,7 @@ public class Main {
 	private void elsoLapEsKoltseg() {
 		int index=0;
 		while(!(ujsagok[index] instanceof Napilap)) {index++;}
-		System.out.println("az elsõ neve: "+ujsagok[index].getNev()+", a heti költség:");
+		System.out.println("az elsõ neve: "+ujsagok[index].getNev()+", a heti költség:"+((Napilap) ujsagok[index]).getHetiMegjelenesSzam()*ujsagok[index].getAr());
 		
 	}
 }
